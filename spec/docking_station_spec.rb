@@ -18,4 +18,10 @@ describe DockingStation do
 		station.release(bike)
 		expect(station.bike_count).to eq 0
 	end
+
+	it 'should know when it is full' do
+		expect(station).not_to be_full
+		20.times { station.dock(Bike.new) }
+		expect(station).to be_full
+	end
 end
