@@ -1,0 +1,17 @@
+
+Bike
+[31m  should not be broken when first created (FAILED - 1)[0m
+
+Failures:
+
+  1) Bike should not be broken when first created
+     [31mFailure/Error: expect(bike).not_to be_broken[0m
+     [31m  expected #<Bike:0x007fe7ac1f5ab8> to respond to `broken?`[0m
+     [36m# ./spec/bike_spec.rb:6:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 0.00149 seconds (files took 0.07304 seconds to load)
+[31m1 example, 1 failure[0m
+
+Failed examples:
+
+[31mrspec ./spec/bike_spec.rb:4[0m [36m# Bike should not be broken when first created[0m
